@@ -29,7 +29,7 @@ services:
     container_name: tsa_backend
     restart: on-failure
     ports:
-      - 8020:8000
+      - ${BE_PORT}:8000
     networks:
       - tsa-network
     environment:
